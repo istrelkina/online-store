@@ -12,6 +12,10 @@
   font-size: $size;
   line-height: 1.5;
 }
+body {
+  @include font-regular(16px);
+  color: $text;
+}
 .container {
   max-width: 1200px;
   box-sizing: border-box;
@@ -28,4 +32,98 @@ h1 {
 }
 h2 {
   font-size: 18px;
+  text-transform: uppercase;
+  color: $text;
+}
+h3 {
+  @include font-bold(15px);
+}
+a {
+  text-decoration: none;
+}
+.arrow-left,
+.arrow-right {
+  background-color: #f1f1f3;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.title-line {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 4px;
+    bottom: -10px;
+    left: 0;
+    background-color: $red;
+  }
+  &_gold::before {
+    background-color: $gold;
+  }
+}
+.card {
+  flex: 0 1 23%;
+  text-align: center;
+  &__photo {
+    width: 269px;
+    height: 358px;
+    overflow: hidden;
+  }
+  &__image {
+    width: 100%;
+    transition: all 0.5s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  &__title {
+    margin: 15px 0 0 0;
+  }
+  &__title-link {
+    color: $text;
+    @include font-bold(15px);
+    transition: all 0.5s;
+    &:hover {
+      color: $red;
+    }
+  }
+  title-link-gold &__price {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  &__price_old {
+    text-decoration: line-through;
+    padding-right: 10px;
+  }
+  &__price_new {
+    color: $red;
+  }
+  &__buy,
+  &__buy-kids {
+    font-size: 13px;
+    font-weight: 500;
+    border: none;
+    border-radius: 3px;
+    background-color: $red;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+    i {
+      padding-right: 5px;
+    }
+    &:hover {
+      color: $red-hover;
+    }
+  }
+  &__buy-kids {
+    background-color: $gold;
+    &:hover {
+      color: #7e542b;
+    }
+  }
 }

@@ -20,11 +20,12 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     clean: true,
     filename: "index.js",
-    assetModuleFilename: "assets/img/[name][ext]",
+    assetModuleFilename: "assets/fonts/[name][ext]",
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, "src", "index.html"),
+      favicon: path.resolve(__dirname, "src", "favicon.ico"),
     }),
     new MiniCssExtractPlugin({
       filename: "[name].css",
@@ -58,12 +59,12 @@ module.exports = {
       {
         test: /\. (woff2?|ttf|svg)$/i,
         type: "asset/resource",
-        generator: {
-          filename: "fonts/[name][ext]",
-        },
+        // generator: {
+        //   filename: "fonts/[name][ext]",
+        // },
       },
       {
-        test: /\.(jpe?g|png|webp|gif|svg)$/i,
+        test: /\.(jpe?g|png|webp|gif|svg|ico)$/i,
         use: [
           {
             loader: "image-webpack-loader",
@@ -91,7 +92,7 @@ module.exports = {
         ],
         type: "asset/resource",
         generator: {
-          filename: "img/[name][ext]",
+          filename: "assets/img/[name][ext]",
         },
       },
       {

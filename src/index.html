@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="image/x-icon" href="favicon.ico" />
     <title>Online Store</title>
   </head>
   <body>
     <header class="header">
       <div class="header__top top">
         <div class="container container-top">
-          <div class="top__mail"><i class="fas fa-envelope"></i><a class="top__mail-link" href="#">clothestore@gmail.com</a></div>
+          <div class="top__mail"><a class="top__mail-link" href="#"><i class="fas fa-envelope"></i>clothestore@gmail.com</a></div>
           <div class="top__info">
             <div class="top__search">
               <input type="text" class="top__input" placeholder="Search..." />
@@ -21,8 +22,8 @@
               <a class="top__login-link" href="#">Login</a>
             </div>
             <div class="top__cart">
-              <i class="fa-solid fa-cart-shopping"></i>
-              <a href="#" class="top__cart-link">My Cart - $ 0</a>
+              
+              <a href="#" class="top__cart-link"><i class="fa-solid fa-cart-shopping"></i>My Cart - $ 0</a>
             </div>
           </div>
         </div>
@@ -81,6 +82,96 @@
             <h2 class="adv__title">OUR LOCATION</h2>
             <div class="adv__info">557-6308 Lacinia Road. NYC</div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="goods">
+      <div class="container">
+        <div class="goods__top">
+          <h2 class="title-line">All dresses</h2>
+          <div class="goods__arrows">
+            <i class="fa-solid fa-angle-left arrow-left"></i>
+            <i class="fa-solid fa-angle-right arrow-right"></i>
+          </div>
+        </div>
+        <div class="goods__cards">
+          <div class="card">
+            <div class="card__photo">
+              <a href="#" class="card__photo_link"><img src="img/green-midi-buttoned-cotton-dress.webp" alt="green-midi-buttoned-cotton-dress" class="card__image" /></a>
+            </div>
+            <h3 class="card__title"><a href="#" class="card__title-link">Midi buttoned cotton dress</a></h3>
+            <div class="card__price">$21.00</div>
+            <button class="card__buy"><i class="fa-solid fa-cart-shopping"></i>add to cart</button>
+          </div>
+        <div class="card">
+          <div class="card__photo">
+            <a href="#" class="card__photo_link"><img src="img/brown-long-sleeve-buttoned-midi-dress.webp" alt="brown-long-sleeve-buttoned-midi-dress" class="card__image" /></a>
+          </div>
+          <h3 class="card__title"><a href="#" class="card__title-link">Long sleeve buttoned midi dress</a></h3>
+          <div class="card__price"><span class="card__price_old">$36.99</span><span class="card__price_new">$20.00</span></div>
+          <button class="card__buy"><i class="fa-solid fa-cart-shopping"></i>add to cart</button>
+        </div>
+        <div class="card">
+          <div class="card__photo">
+            <a href="#" class="card__photo_link"><img src="img/white-shot-sleeve-midi-dress.webp" alt="white-shot-sleeve-midi-dress" class="card__image" /></a>
+          </div>
+          <h3 class="card__title"><a href="#" class="card__title-link">Shot sleeve midi dress</a></h3>
+          <div class="card__price">$48.99</div>
+          <button class="card__buy"><i class="fa-solid fa-cart-shopping"></i>add to cart</button>
+        </div>
+        <div class="card">
+          <div class="card__photo">
+            <a href="#" class="card__photo_link"><img src="img/green-midi-v-neck-jersey-dress.webp" alt="green-midi-v-neck-jersey-dress" class="card__image" /></a>
+          </div>
+          <h3 class="card__title"><a href="#" class="card__title-link">Midi v-neck jersey dress</a></h3>
+          <div class="card__price">$20.99</div>
+          <button class="card__buy"><i class="fa-solid fa-cart-shopping"></i>add to cart</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="goods">
+      <div class="container">
+        <div class="goods__top">
+          <h2 class="title-line title-line_gold">JUMPERS & CARDIGANS</h2>
+          <div class="goods__arrows">
+            <i class="fa-solid fa-angle-left arrow-left"></i>
+            <i class="fa-solid fa-angle-right arrow-right"></i>
+          </div>
+        </div>
+        <div class="goods__cards">
+          <div class="card">
+            <div class="card__photo">
+              <a href="#" class="card__photo_link"><img src="img/green-short-sleeve-sweatshirt-top.webp" alt="green-midi-buttoned-cotton-dress" class="card__image" /></a>
+            </div>
+            <h3 class="card__title"><a href="#" class="card__title-link title-link-gold">Short sleeve sweatshirt top</a></h3>
+            <div class="card__price">$19.99</div>
+            <button class="card__buy-kids"><i class="fa-solid fa-cart-shopping"></i>add to cart</button>
+          </div>
+        <div class="card">
+          <div class="card__photo">
+            <a href="#" class="card__photo_link"><img src="img/lilac-knitted-cardigan.webp" alt="brown-long-sleeve-buttoned-midi-dress" class="card__image" /></a>
+          </div>
+          <h3 class="card__title"><a href="#" class="card__title-link title-link-gold">Knitted cardigan</a></h3>
+          <div class="card__price">$39.99</div>
+          <button class="card__buy-kids"><i class="fa-solid fa-cart-shopping"></i>add to cart</button>
+        </div>
+        <div class="card">
+            <div class="card__photo">
+            <a href="#" class="card__photo_link"><img src="img/turquoise-sweatshirt.webp" alt="white-shot-sleeve-midi-dress" class="card__image" /></a>
+          </div>
+          <h3 class="card__title"><a href="#" class="card__title-link title-link-gold">Sweatshirt</a></h3>
+          <div class="card__price">$34.99</div>
+          <button class="card__buy-kids"><i class="fa-solid fa-cart-shopping"></i>add to cart</button>
+        </div>
+        <div class="card">
+          <div class="card__photo">
+            <a href="#" class="card__photo_link"><img src="img/white-rib-knit-pique-collar-top.webp" alt="green-midi-v-neck-jersey-dress" class="card__image" /></a>
+          </div>
+          <h3 class="card__title"><a href="#" class="card__title-link title-link-gold">Rib-knit pique collar top</a></h3>
+          <div class="card__price"><span class="card__price_old">$39.99</span><span class="card__price_new">$19.99</span></div>
+          <button class="card__buy-kids"><i class="fa-solid fa-cart-shopping"></i>add to cart</button>
         </div>
       </div>
     </section>
