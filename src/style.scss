@@ -1,3 +1,221 @@
 @import "libs/normalize";
 @import "style/var";
-@import "style/style";
+@import "style/global";
+
+///importing font awesome
+$fa-font-path: "fonts";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+
+body {
+  @include font-regular(16px);
+}
+
+// header
+.header__top {
+  background-color: $bg-dark-top;
+  color: $white;
+
+  width: 100%;
+}
+.container-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+}
+.top {
+  &__mail {
+    display: flex;
+    align-items: center;
+  }
+  &__mail-link,
+  &__login-link,
+  &__cart-link {
+    padding-left: 3px;
+    transition: all 0.5s;
+    color: #fff;
+    text-decoration: none;
+    @include font-regular(15px);
+    &:hover {
+      color: $red;
+    }
+  }
+  &__info {
+    font-size: 14px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  &__search {
+    display: flex;
+    padding-right: 15px;
+    border-right: 1px solid $hr;
+  }
+  &__input {
+    background-color: $bg-dark;
+    border: none;
+    padding: 8px 12px;
+    width: 180px;
+    color: #fff;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    margin: 0;
+    outline: none;
+  }
+  &__search-btn {
+    width: 32px;
+    height: 35px;
+    background-color: $bg-dark;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    color: #fff;
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  &__login {
+    padding: 0 15px;
+  }
+  &__cart {
+    padding: 0 15px;
+    height: 100%;
+    background-color: $red;
+    display: flex;
+    align-items: center;
+    &-link {
+      padding-left: 3px;
+    }
+    &-link:hover {
+      color: #ffbcb0;
+    }
+  }
+}
+
+.container-logo {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.header__logo {
+  background-color: $bg-dark;
+  height: 110px;
+}
+.container-menu {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid $hr;
+}
+.header__menu {
+  top: 50px;
+  background-color: $bg-dark;
+}
+.menu__nav {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  .menu__item {
+    padding: 15px 30px 15px 0;
+  }
+  .menu__link {
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.5s;
+    @include font-bold(15px);
+    &_active {
+      color: $red;
+    }
+    &:hover {
+      color: $red;
+    }
+  }
+}
+
+//hero
+
+.hero {
+  background-image: url("img/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 509px;
+  width: 100%;
+  &__title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  &__info {
+    max-width: 550px;
+    padding-top: 100px;
+    padding-left: 50px;
+  }
+  &__year {
+    font-size: 98px;
+    color: #fff;
+    font-weight: 800;
+    padding-right: 20px;
+  }
+}
+.btn-shop,
+.readmore {
+  padding: 10px 30px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.5s;
+  &:hover {
+    transform: translateY(-7px);
+  }
+}
+.btn-shop {
+  border: none;
+  background-color: $red;
+  margin-right: 10px;
+}
+.readmore {
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+//adv
+
+.adv {
+  background-color: $red;
+  color: #fff;
+  width: 100%;
+  margin: 1px 0;
+}
+.container-adv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px 0;
+}
+.adv__block {
+  display: flex;
+  flex: 1 1 33%;
+  justify-content: center;
+  align-items: center;
+  & + & {
+    border-left: 1px solid #fff;
+  }
+}
+.adv__icon {
+  margin-right: 20px;
+  font-size: 30px;
+}
+.adv__title {
+  margin: 0;
+}
+.adv__info {
+  font-size: 14px;
+  line-height: 1.2;
+}
