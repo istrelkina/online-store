@@ -1,13 +1,13 @@
-@import "fonts";
+@import 'fonts';
 
 @mixin font-regular($size) {
-  font-family: "Karla", sans-serif;
+  font-family: 'Karla', sans-serif;
   font-weight: 400;
   font-size: $size;
   line-height: 1.5;
 }
 @mixin font-bold($size) {
-  font-family: "Karla", sans-serif;
+  font-family: 'Karla', sans-serif;
   font-weight: 700;
   font-size: $size;
   line-height: 1.5;
@@ -51,7 +51,7 @@ a {
   position: relative;
   &::before {
     position: absolute;
-    content: "";
+    content: '';
     width: 40px;
     height: 4px;
     bottom: -10px;
@@ -78,18 +78,20 @@ a {
       transform: scale(1.1);
     }
   }
-  &__title {
-    margin: 15px 0 0 0;
-  }
   &__title-link {
+    margin: 15px 0 0 0;
+    display: inline-block;
     color: $text;
     @include font-bold(15px);
     transition: all 0.5s;
     &:hover {
       color: $red;
     }
+    &_gold:hover {
+      color: $gold;
+    }
   }
-  title-link-gold &__price {
+  &__price {
     font-size: 15px;
     font-weight: 700;
     margin-bottom: 10px;
@@ -100,6 +102,9 @@ a {
   }
   &__price_new {
     color: $red;
+  }
+  &__price_gold {
+    color: $gold;
   }
   &__buy,
   &__buy-kids {
