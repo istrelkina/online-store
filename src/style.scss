@@ -1,17 +1,19 @@
-@import "libs/normalize";
-@import "style/var";
-@import "style/global";
+@import 'libs/normalize';
+@import 'style/var';
+@import 'style/global';
 
 ///importing font awesome
-$fa-font-path: "fonts";
-@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
-@import "../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+$fa-font-path: 'fonts';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/regular.scss';
+@import '../node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
 
 // header
 .header__top {
-  background-color: $bg-dark-top;
-  color: $white;
+  position: relative;
 
+  color: $white;
   width: 100%;
 }
 .container-top {
@@ -21,6 +23,15 @@ $fa-font-path: "fonts";
   height: 50px;
 }
 .top {
+  &__wrapper {
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: $bg-dark-top;
+  }
   &__mail {
     display: flex;
     align-items: center;
@@ -100,6 +111,7 @@ $fa-font-path: "fonts";
 .header__logo {
   background-color: $bg-dark;
   height: 110px;
+  margin-top: 50px;
 }
 .container-menu {
   display: flex;
@@ -138,7 +150,7 @@ $fa-font-path: "fonts";
 //hero
 
 .hero {
-  background-image: url("img/hero.jpg");
+  background-image: url('img/hero.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -234,5 +246,150 @@ $fa-font-path: "fonts";
   &__cards {
     display: flex;
     justify-content: space-between;
+  }
+}
+//popular
+.popular {
+  padding-top: 35px;
+  padding-bottom: 70px;
+  background-color: #fff;
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+}
+//subscribe
+.subscribe {
+  padding: 50px 0 70px 0;
+  background-image: url('img/newsletter.webp');
+  background-position: 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  &__title {
+    color: #fff;
+    font-size: 24px;
+  }
+  &__text {
+    max-width: 410px;
+  }
+  &__form {
+    max-width: 400px;
+  }
+  &__input {
+    border: none;
+    border-radius: 3px;
+    background-color: #eeeeee;
+    padding: 10px;
+    width: 220px;
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+  &__btn {
+    border: none;
+    border-radius: 3px;
+    padding: 13px 0px;
+    font-size: 15px;
+    background-color: $black;
+    width: 240px;
+    color: $bg-grey;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+}
+//footer
+.footer-main {
+  font-size: 15px;
+  padding: 60px 0;
+  background-color: $bg-dark;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+.footer-bottom {
+  height: 50px;
+  background-color: $bg-dark-top;
+  font-size: 15px;
+  &__container {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.footer {
+  color: $text-light;
+  &__about {
+    flex: 0 1 25%;
+  }
+  &__title {
+    text-transform: none;
+    color: $text-light;
+    margin-bottom: 35px;
+  }
+  &__link {
+    color: #fff;
+    transition: all 0.5s;
+    &:hover {
+      color: $red;
+    }
+  }
+  &__logo {
+    width: 130px;
+  }
+  &__copyright {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  &__links {
+    padding-right: 35px;
+    width: 15px;
+    height: 15px;
+  }
+  &__links-social {
+    display: flex;
+    justify-content: flex-start;
+  }
+  &__links_facebook,
+  &__links_twitter,
+  &__links_instagram,
+  &__links_youtube,
+  &__links_pinterest {
+    position: relative;
+    transition: all 0.5s;
+    &:hover {
+      &::before {
+        color: $red;
+      }
+    }
+    &::before {
+      display: inline-block;
+      font-size: 16px;
+      color: $text-light;
+      position: absolute;
+      top: -5px;
+      left: 0;
+      font-family: 'Font Awesome 6 Brands';
+      width: 15px;
+      height: 15px;
+    }
+  }
+  &__links_facebook::before {
+    content: '\f39e';
+  }
+  &__links_twitter::before {
+    content: '\f099';
+  }
+  &__links_instagram::before {
+    content: '\f16d';
+  }
+  &__links_youtube::before {
+    content: '\f167';
+  }
+  &__links_pinterest::before {
+    content: '\f0d2';
   }
 }
