@@ -1,6 +1,7 @@
 {
   "dresses": [
     {
+      "id": 8364738,
       "src": "img/green-midi-buttoned-cotton-dress.webp",
       "title": "Midi buttoned cotton dress",
       "price": 21.0,
@@ -10,6 +11,7 @@
       "category": "dresses"
     },
     {
+      "id": 8324738,
       "src": "img/brown-long-sleeve-buttoned-midi-dress.webp",
       "title": "Long sleeve buttoned midi dress",
       "price": 36.99,
@@ -19,6 +21,7 @@
       "category": "dresses"
     },
     {
+      "id": 8364138,
       "src": "img/white-shot-sleeve-midi-dress.webp",
       "title": "Shot sleeve midi dress",
       "price": 48.99,
@@ -28,6 +31,7 @@
       "category": "dresses"
     },
     {
+      "id": 8364735,
       "src": "img/green-midi-v-neck-jersey-dress.webp",
       "title": "Midi v-neck jersey dress",
       "price": 20.99,
@@ -37,6 +41,7 @@
       "category": "dresses"
     },
     {
+      "id": 3364738,
       "src": "img/brown-strappy-midi-dress.webp",
       "title": "Strappy midi dress",
       "price": 39.99,
@@ -46,6 +51,7 @@
       "category": "dresses"
     },
     {
+      "id": 2164738,
       "src": "img/blue-striped-cotton-shirt-dress.webp",
       "title": "Strappy midi dress",
       "price": 23.99,
@@ -55,6 +61,7 @@
       "category": "dresses"
     },
     {
+      "id": 8355738,
       "src": "img/blue-midi-wrap-dress.webp",
       "title": "Midi wrap dress",
       "price": 25.99,
@@ -66,6 +73,7 @@
   ],
   "jumpers & cardigans": [
     {
+      "id": 8114738,
       "src": "img/green-short-sleeve-sweatshirt-top.webp",
       "title": "Short sleeve sweatshirt top",
       "price": 19.99,
@@ -75,6 +83,7 @@
       "category": "jumpers & cardigans"
     },
     {
+      "id": 8364730,
       "src": "img/lilac-knitted-cardigan.webp",
       "title": "Knitted cardigan",
       "price": 39.99,
@@ -84,6 +93,7 @@
       "category": "jumpers & cardigans"
     },
     {
+      "id": 8360738,
       "src": "img/turquoise-sweatshirt.webp",
       "title": "Sweatshirt",
       "price": 34.99,
@@ -93,6 +103,7 @@
       "category": "jumpers & cardigans"
     },
     {
+      "id": 8360708,
       "src": "img/white-rib-knit-pique-collar-top.webp",
       "title": "Rib-knit pique collar top",
       "price": 29.99,
@@ -102,6 +113,7 @@
       "category": "jumpers & cardigans"
     },
     {
+      "id": 8364738,
       "src": "img/beige-knitted-jumper.webp",
       "title": "Knitted jumper",
       "price": 49.99,
@@ -111,6 +123,7 @@
       "category": "jumpers & cardigans"
     },
     {
+      "id": 8360722,
       "src": "img/blue-fine-knit-cardigan.webp",
       "title": "Fine knit cardigan",
       "price": 34.99,
@@ -120,6 +133,7 @@
       "category": "jumpers & cardigans"
     },
     {
+      "id": 8064538,
       "src": "img/brown-knitted-hoodie.webp",
       "title": "Knitted hoodie",
       "price": 34.99,
@@ -129,6 +143,7 @@
       "category": "jumpers & cardigans"
     },
     {
+      "id": 7324738,
       "src": "img/lilac-fine-knit-short-sleeve-jumper.webp",
       "title": "Fine-knit short sleeve jumper",
       "price": 22.99,
@@ -140,6 +155,7 @@
   ],
   "blouses": [
     {
+      "id": 8344738,
       "src": "img/white-blouse-with-broderie-anglaise.webp",
       "title": "Blouse with broderie anglaise",
       "price": 18.99,
@@ -149,6 +165,7 @@
       "category": "blouses"
     },
     {
+      "id": 8360748,
       "src": "img/blue-sleeveless-blouse.webp",
       "title": "Sleeveless blouse",
       "price": 12.49,
@@ -158,6 +175,7 @@
       "category": "blouses"
     },
     {
+      "id": 8960738,
       "src": "img/orange-terry-shirt-with-collar.webp",
       "title": "Terry shirt with collar",
       "price": 17.99,
@@ -167,6 +185,7 @@
       "category": "blouses"
     },
     {
+      "id": 8360799,
       "src": "img/green-short-sleeve-floral-blouse.webp",
       "title": "Short sleeve floral blouse",
       "price": 30.99,

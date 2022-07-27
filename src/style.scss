@@ -397,12 +397,35 @@ $fa-font-path: 'fonts';
 }
 
 //card-detail
+.pagination {
+  margin: 50px 0 30px 0;
+  &__nav {
+    padding: 10px 20px;
+    background-color: $bg-grey;
+    font-size: 15px;
+  }
+  &__link,
+  &__link:focus,
+  &__link:active {
+    color: $text;
+    transition: all 0.5s;
+  }
+  &__link:hover {
+    color: $red;
+  }
+}
 .card-detail {
   color: $text;
-  margin-top: 100px;
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 100px;
+    border-bottom: 1px solid $bg-grey;
+  }
+  &__title {
+    @include font-bold(24px);
+    text-transform: none;
+    margin-top: 0;
   }
   &__image {
     flex: 0 1 40%;
@@ -410,7 +433,45 @@ $fa-font-path: 'fonts';
   &__info {
     flex: 0 1 40%;
   }
+  &__desc {
+    margin-top: 30px;
+  }
   &__price {
-    font-size: 36px;
+    font-size: 32px;
+    color: $red;
+  }
+  &__list {
+    list-style: square;
+    margin-left: 20px;
+  }
+  h3 {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  p {
+    margin-top: 0px;
+  }
+  &__sizes {
+    display: flex;
+    justify-content: flex-start;
+  }
+  &__sizes-btn {
+    width: 60px;
+    height: 40px;
+    margin: 10px 10px 30px 0;
+    border: 1px solid $text;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    &:hover,
+    &.active {
+      color: #fff;
+      background-color: $text;
+    }
   }
 }
+// h3.card-detail__product-title {
+//   font-size: 22px;
+// }
