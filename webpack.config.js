@@ -1,11 +1,12 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const EslingPlugin = require('eslint-webpack-plugin');
 
-const mode = process.env.NODE_ENV || "development";
-const devMode = mode === "development";
-const target = devMode ? "web" : "browserslist";
-const devtool = devMode ? "source-map" : undefined;
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const mode = process.env.NODE_ENV || 'development';
+const devMode = mode === 'development';
+const target = devMode ? 'web' : 'browserslist';
+const devtool = devMode ? 'source-map' : undefined;
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   mode,
@@ -15,42 +16,49 @@ module.exports = {
     port: 3000,
     open: true,
   },
-  entry: path.resolve(__dirname, "src", "index.js"),
+  entry: path.resolve(__dirname, 'src', 'index'),
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, 'dist'),
     clean: true,
-    filename: "index.js",
-    assetModuleFilename: "assets/fonts/[name][ext]",
+    filename: 'index.js',
+    assetModuleFilename: 'assets/fonts/[name][ext]',
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve(__dirname, "src", "index.html"),
-      favicon: path.resolve(__dirname, "src", "favicon.ico"),
+      filename: 'index.html',
+      template: path.resolve(__dirname, 'src', 'index.html'),
+      favicon: path.resolve(__dirname, 'src', 'favicon.ico'),
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'card.html',
+      template: path.resolve(__dirname, 'src', 'card.html'),
+      //favicon: path.resolve(__dirname, 'src', 'favicon.ico'),
     }),
     new MiniCssExtractPlugin({
-      filename: "[name].css",
+      filename: '[name].css',
     }),
+    new EslingPlugin({ extensions: 'ts' }),
   ],
   module: {
     rules: [
       {
         test: /\.html$/i,
-        loader: "html-loader",
+        loader: 'html-loader',
       },
       {
         test: /\.(c|sa|sc)ss$/i,
         use: [
-          devMode ? "style-loader" : MiniCssExtractPlugin.loader,
-          "css-loader",
+          devMode ? 'style-loader' : MiniCssExtractPlugin.loader,
+          'css-loader',
           {
-            loader: "postcss-loader",
+            loader: 'postcss-loader',
             options: {
               postcssOptions: {
-                plugins: [require("postcss-preset-env")], //автопрефиксы для браузеров
+                plugins: [require('postcss-preset-env')], //автопрефиксы для браузеров
               },
             },
           },
-          "sass-loader",
+          'sass-loader',
         ],
         // generator: {
         //   filename: "assets/[name][ext]",
@@ -58,7 +66,7 @@ module.exports = {
       },
       {
         test: /\. (woff2?|ttf|svg)$/i,
-        type: "asset/resource",
+        type: 'asset/resource',
         // generator: {
         //   filename: "fonts/[name][ext]",
         // },
@@ -67,7 +75,7 @@ module.exports = {
         test: /\.(jpe?g|png|webp|gif|svg|ico)$/i,
         use: [
           {
-            loader: "image-webpack-loader",
+            loader: 'image-webpack-loader',
             options: {
               mozjpeg: {
                 progressive: true,
@@ -90,20 +98,24 @@ module.exports = {
             },
           },
         ],
-        type: "asset/resource",
+        type: 'asset/resource',
         generator: {
-          filename: "assets/img/[name][ext]",
+          filename: 'assets/img/[name][ext]',
         },
       },
       {
         test: /\.m?js$/i,
         exclude: /(node_modules|bower_components)/,
         use: {
-          loader: "babel-loader",
+          loader: 'babel-loader',
           options: {
-            presets: ["@babel/preset-env"],
+            presets: ['@babel/preset-env'],
           },
         },
+      },
+      {
+        test: /\.ts$/i,
+        use: 'ts-loader',
       },
     ],
   },

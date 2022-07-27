@@ -15,6 +15,7 @@
 body {
   @include font-regular(16px);
   color: $text;
+  overflow-x: hidden;
 }
 .container {
   max-width: 1200px;
@@ -46,11 +47,25 @@ ul {
   padding: 0;
   list-style: none;
 }
-.arrow-left,
-.arrow-right {
-  background-color: #f1f1f3;
-  padding: 5px 10px;
-  cursor: pointer;
+.arrow {
+  &__left,
+  &__right,
+  &__left-gold,
+  &__right-gold {
+    position: absolute;
+    background-color: #f1f1f3;
+    padding: 5px 10px;
+    cursor: pointer;
+    top: 40px;
+    right: 0;
+    width: 10px;
+    height: 25px;
+    z-index: 10;
+  }
+  &__left,
+  &__left-gold {
+    right: 35px;
+  }
 }
 .title-line {
   position: relative;
@@ -80,12 +95,14 @@ ul {
   }
 }
 .card {
-  flex: 0 1 23%;
+  //flex: 0 1 23%;
   text-align: center;
+
   &__photo {
     width: 269px;
     height: 358px;
     overflow: hidden;
+    text-align: center;
   }
   &__image {
     width: 100%;

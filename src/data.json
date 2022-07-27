@@ -1,0 +1,179 @@
+{
+  "dresses": [
+    {
+      "src": "img/green-midi-buttoned-cotton-dress.webp",
+      "title": "Midi buttoned cotton dress",
+      "price": 21.0,
+      "sale": 0,
+      "color": "green",
+      "size": ["XS", "S", "M", "L", "XL"],
+      "category": "dresses"
+    },
+    {
+      "src": "img/brown-long-sleeve-buttoned-midi-dress.webp",
+      "title": "Long sleeve buttoned midi dress",
+      "price": 36.99,
+      "sale": 20,
+      "color": "brown",
+      "size": ["XS", "S", "M", "L", "XL"],
+      "category": "dresses"
+    },
+    {
+      "src": "img/white-shot-sleeve-midi-dress.webp",
+      "title": "Shot sleeve midi dress",
+      "price": 48.99,
+      "sale": 0,
+      "color": "white",
+      "size": ["M", "L", "XL"],
+      "category": "dresses"
+    },
+    {
+      "src": "img/green-midi-v-neck-jersey-dress.webp",
+      "title": "Midi v-neck jersey dress",
+      "price": 20.99,
+      "sale": 0,
+      "color": "green",
+      "size": ["XS", "S", "M", "L"],
+      "category": "dresses"
+    },
+    {
+      "src": "img/brown-strappy-midi-dress.webp",
+      "title": "Strappy midi dress",
+      "price": 39.99,
+      "sale": 27.99,
+      "color": "brown",
+      "size": ["XS", "S", "L"],
+      "category": "dresses"
+    },
+    {
+      "src": "img/blue-striped-cotton-shirt-dress.webp",
+      "title": "Strappy midi dress",
+      "price": 23.99,
+      "sale": 0,
+      "color": "blue",
+      "size": ["XS", "S", "M"],
+      "category": "dresses"
+    },
+    {
+      "src": "img/blue-midi-wrap-dress.webp",
+      "title": "Midi wrap dress",
+      "price": 25.99,
+      "sale": 0,
+      "color": "blue",
+      "size": ["XS", "S", "M", "L", "XL"],
+      "category": "dresses"
+    }
+  ],
+  "jumpers & cardigans": [
+    {
+      "src": "img/green-short-sleeve-sweatshirt-top.webp",
+      "title": "Short sleeve sweatshirt top",
+      "price": 19.99,
+      "sale": 0,
+      "color": "green",
+      "size": ["S", "M", "L", "XL"],
+      "category": "jumpers & cardigans"
+    },
+    {
+      "src": "img/lilac-knitted-cardigan.webp",
+      "title": "Knitted cardigan",
+      "price": 39.99,
+      "sale": 0,
+      "color": "lilac",
+      "size": ["L", "XL"],
+      "category": "jumpers & cardigans"
+    },
+    {
+      "src": "img/turquoise-sweatshirt.webp",
+      "title": "Sweatshirt",
+      "price": 34.99,
+      "sale": 0,
+      "color": "turquoise",
+      "size": ["S", "M", "L", "XL"],
+      "category": "jumpers & cardigans"
+    },
+    {
+      "src": "img/white-rib-knit-pique-collar-top.webp",
+      "title": "Rib-knit pique collar top",
+      "price": 29.99,
+      "sale": 0,
+      "color": "white",
+      "size": ["XS", "S", "M"],
+      "category": "jumpers & cardigans"
+    },
+    {
+      "src": "img/beige-knitted-jumper.webp",
+      "title": "Knitted jumper",
+      "price": 49.99,
+      "sale": 0,
+      "color": "red",
+      "size": ["S", "M", "L", "XL"],
+      "category": "jumpers & cardigans"
+    },
+    {
+      "src": "img/blue-fine-knit-cardigan.webp",
+      "title": "Fine knit cardigan",
+      "price": 34.99,
+      "sale": 0,
+      "color": "blue",
+      "size": ["XS", "S", "M", "L"],
+      "category": "jumpers & cardigans"
+    },
+    {
+      "src": "img/brown-knitted-hoodie.webp",
+      "title": "Knitted hoodie",
+      "price": 34.99,
+      "sale": 0,
+      "color": "brown",
+      "size": ["XS", "S", "M", "L"],
+      "category": "jumpers & cardigans"
+    },
+    {
+      "src": "img/lilac-fine-knit-short-sleeve-jumper.webp",
+      "title": "Fine-knit short sleeve jumper",
+      "price": 22.99,
+      "sale": 0,
+      "color": "lilac",
+      "size": ["XS", "M", "L"],
+      "category": "jumpers & cardigans"
+    }
+  ],
+  "blouses": [
+    {
+      "src": "img/white-blouse-with-broderie-anglaise.webp",
+      "title": "Blouse with broderie anglaise",
+      "price": 18.99,
+      "sale": 0,
+      "color": "white",
+      "size": ["XS", "S", "M", "L"],
+      "category": "blouses"
+    },
+    {
+      "src": "img/blue-sleeveless-blouse.webp",
+      "title": "Sleeveless blouse",
+      "price": 12.49,
+      "sale": 0,
+      "color": "blue",
+      "size": ["XS", "S", "M", "L"],
+      "category": "blouses"
+    },
+    {
+      "src": "img/orange-terry-shirt-with-collar.webp",
+      "title": "Terry shirt with collar",
+      "price": 17.99,
+      "sale": 0,
+      "color": "orange",
+      "size": ["S", "L"],
+      "category": "blouses"
+    },
+    {
+      "src": "img/green-short-sleeve-floral-blouse.webp",
+      "title": "Short sleeve floral blouse",
+      "price": 30.99,
+      "sale": 20.99,
+      "color": "green",
+      "size": ["XS", "S", "M", "L"],
+      "category": "blouses"
+    }
+  ]
+}
