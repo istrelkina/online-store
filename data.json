@@ -2,7 +2,7 @@
   "dresses": [
     {
       "id": 8364738,
-      "src": "assets/img/green-midi-buttoned-cotton-dress.webp",
+      "src": "img/green-midi-buttoned-cotton-dress.webp",
       "title": "Midi buttoned cotton dress",
       "price": 21.0,
       "sale": 0,
@@ -12,7 +12,7 @@
     },
     {
       "id": 8324738,
-      "src": "assets/img/brown-long-sleeve-buttoned-midi-dress.webp",
+      "src": "img/brown-long-sleeve-buttoned-midi-dress.webp",
       "title": "Long sleeve buttoned midi dress",
       "price": 36.99,
       "sale": 20,
@@ -22,7 +22,7 @@
     },
     {
       "id": 8364138,
-      "src": "assets/img/white-shot-sleeve-midi-dress.webp",
+      "src": "img/white-shot-sleeve-midi-dress.webp",
       "title": "Shot sleeve midi dress",
       "price": 48.99,
       "sale": 0,
@@ -32,7 +32,7 @@
     },
     {
       "id": 8364735,
-      "src": "assets/img/green-midi-v-neck-jersey-dress.webp",
+      "src": "img/green-midi-v-neck-jersey-dress.webp",
       "title": "Midi v-neck jersey dress",
       "price": 20.99,
       "sale": 0,
@@ -42,7 +42,7 @@
     },
     {
       "id": 3364738,
-      "src": "assets/img/brown-strappy-midi-dress.webp",
+      "src": "img/brown-strappy-midi-dress.webp",
       "title": "Strappy midi dress",
       "price": 39.99,
       "sale": 27.99,
@@ -52,8 +52,8 @@
     },
     {
       "id": 2164738,
-      "src": "assets/img/blue-striped-cotton-shirt-dress.webp",
-      "title": "Cotton shirt dress",
+      "src": "img/blue-striped-cotton-shirt-dress.webp",
+      "title": "Strappy midi dress",
       "price": 23.99,
       "sale": 0,
       "color": "blue",
@@ -62,19 +62,19 @@
     },
     {
       "id": 8355738,
-      "src": "assets/img/blue-midi-wrap-dress.webp",
+      "src": "img/blue-midi-wrap-dress.webp",
       "title": "Midi wrap dress",
       "price": 25.99,
       "sale": 0,
       "color": "blue",
-      "size": ["XS", "S", "jM", "L", "XL"],
+      "size": ["XS", "S", "M", "L", "XL"],
       "category": "dresses"
     }
   ],
   "jumpers & cardigans": [
     {
       "id": 8114738,
-      "src": "assets/img/green-short-sleeve-sweatshirt-top.webp",
+      "src": "img/green-short-sleeve-sweatshirt-top.webp",
       "title": "Short sleeve sweatshirt top",
       "price": 19.99,
       "sale": 0,
@@ -84,7 +84,7 @@
     },
     {
       "id": 8364730,
-      "src": "assets/img/lilac-knitted-cardigan.webp",
+      "src": "img/lilac-knitted-cardigan.webp",
       "title": "Knitted cardigan",
       "price": 39.99,
       "sale": 0,
@@ -94,7 +94,7 @@
     },
     {
       "id": 8360738,
-      "src": "assets/img/turquoise-sweatshirt.webp",
+      "src": "img/turquoise-sweatshirt.webp",
       "title": "Sweatshirt",
       "price": 34.99,
       "sale": 0,
@@ -104,7 +104,7 @@
     },
     {
       "id": 8360708,
-      "src": "assets/img/white-rib-knit-pique-collar-top.webp",
+      "src": "img/white-rib-knit-pique-collar-top.webp",
       "title": "Rib-knit pique collar top",
       "price": 29.99,
       "sale": 0,
@@ -114,7 +114,7 @@
     },
     {
       "id": 8364738,
-      "src": "assets/img/beige-knitted-jumper.webp",
+      "src": "img/beige-knitted-jumper.webp",
       "title": "Knitted jumper",
       "price": 49.99,
       "sale": 0,
@@ -124,7 +124,7 @@
     },
     {
       "id": 8360722,
-      "src": "assets/img/blue-fine-knit-cardigan.webp",
+      "src": "img/blue-fine-knit-cardigan.webp",
       "title": "Fine knit cardigan",
       "price": 34.99,
       "sale": 0,
@@ -134,7 +134,7 @@
     },
     {
       "id": 8064538,
-      "src": "assets/img/brown-knitted-hoodie.webp",
+      "src": "img/brown-knitted-hoodie.webp",
       "title": "Knitted hoodie",
       "price": 34.99,
       "sale": 0,
@@ -144,7 +144,7 @@
     },
     {
       "id": 7324738,
-      "src": "assets/img/lilac-fine-knit-short-sleeve-jumper.webp",
+      "src": "img/lilac-fine-knit-short-sleeve-jumper.webp",
       "title": "Fine-knit short sleeve jumper",
       "price": 22.99,
       "sale": 0,
@@ -156,7 +156,7 @@
   "blouses": [
     {
       "id": 8344738,
-      "src": "assets/img/white-blouse-with-broderie-anglaise.webp",
+      "src": "img/white-blouse-with-broderie-anglaise.webp",
       "title": "Blouse with broderie anglaise",
       "price": 18.99,
       "sale": 0,
@@ -166,7 +166,7 @@
     },
     {
       "id": 8360748,
-      "src": "assets/img/blue-sleeveless-blouse.webp",
+      "src": "img/blue-sleeveless-blouse.webp",
       "title": "Sleeveless blouse",
       "price": 12.49,
       "sale": 0,
@@ -176,7 +176,7 @@
     },
     {
       "id": 8960738,
-      "src": "assets/img/orange-terry-shirt-with-collar.webp",
+      "src": "img/orange-terry-shirt-with-collar.webp",
       "title": "Terry shirt with collar",
       "price": 17.99,
       "sale": 0,
@@ -186,7 +186,7 @@
     },
     {
       "id": 8360799,
-      "src": "assets/img/green-short-sleeve-floral-blouse.webp",
+      "src": "img/green-short-sleeve-floral-blouse.webp",
       "title": "Short sleeve floral blouse",
       "price": 30.99,
       "sale": 20.99,

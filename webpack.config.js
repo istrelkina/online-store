@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const EslingPlugin = require('eslint-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 const mode = process.env.NODE_ENV || 'development';
 const devMode = mode === 'development';
@@ -12,6 +13,9 @@ module.exports = {
   mode,
   target,
   devtool,
+  experiments: {
+    topLevelAwait: true,
+  },
   devServer: {
     port: 3000,
     open: true,
@@ -29,13 +33,16 @@ module.exports = {
       template: path.resolve(__dirname, 'src', 'index.html'),
       favicon: path.resolve(__dirname, 'src', 'favicon.ico'),
     }),
-    new HtmlWebpackPlugin({
-      filename: 'card.html',
-      template: path.resolve(__dirname, 'src', 'card.html'),
-      //favicon: path.resolve(__dirname, 'src', 'favicon.ico'),
-    }),
+    // new HtmlWebpackPlugin({
+    //   filename: 'card.html',
+    //   template: path.resolve(__dirname, 'src', 'card.html'),
+    //   //favicon: path.resolve(__dirname, 'src', 'favicon.ico'),
+    // }),
     new MiniCssExtractPlugin({
       filename: '[name].css',
+    }),
+    new CopyPlugin({
+      patterns: [{ from: './src/img', to: 'assets/img' }],
     }),
     new EslingPlugin({ extensions: 'ts' }),
   ],
@@ -60,16 +67,10 @@ module.exports = {
           },
           'sass-loader',
         ],
-        // generator: {
-        //   filename: "assets/[name][ext]",
-        // },
       },
       {
         test: /\. (woff2?|ttf|svg)$/i,
         type: 'asset/resource',
-        // generator: {
-        //   filename: "fonts/[name][ext]",
-        // },
       },
       {
         test: /\.(jpe?g|png|webp|gif|svg|ico)$/i,
@@ -119,4 +120,7 @@ module.exports = {
       },
     ],
   },
+  // resolve: {
+  //   roots: [path.resolve(__dirname, 'src', 'img')],
+  // },
 };
